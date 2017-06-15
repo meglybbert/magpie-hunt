@@ -1,0 +1,150 @@
+/* Stylesheet */
+@import "semantic";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+
+/* Variables */
+$blue: #40AAF2;
+$green: #52D291;
+$black: #231F20;
+$dgray: #A7ACB3;
+$lgray: #C8CDD5;
+$white: #FFF;
+$font: 'Montserrat', sans-serif;
+
+/* Mobile */
+@media only screen and (min-width: 100px) {
+    .gradient, .chunk, .footer, .triple, .item, .downloads{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 .6em; 
+    }
+
+    p{
+        color: $black;
+        text-align: center;
+        font-family: $font;
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+    .gradient{
+        background: linear-gradient(to right, $blue, $green);
+        h1, h4{
+            color: $white;
+            font-family: $font;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 1.2em;
+            padding-bottom: 2em;
+        }
+        .login{
+            width: 100%;
+            text-align: right;
+            padding-top:.5em;
+            padding-right: .6em;
+        }
+        img{
+            width: 60%;
+            padding-top: 1em;
+        }
+    }
+
+    .chunk{
+        border-bottom: solid thin $lgray;
+        padding: 1.2em 0;
+        h1, h5{
+            color: $dgray;
+            font-family: $font;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 2.6em;
+            padding: .8em 1.2em 0 1.2em;
+            text-align: center
+        }
+        h5{
+            font-weight: 500;
+            font-size: 1.4em;
+        }
+        .item{
+            margin: 1.5em 0;
+            img{
+                width: 80%;
+            }
+            padding-bottom: 2em;
+        }
+        button{
+            color: $white;
+            background-color: $green;
+            border-radius: 24px;
+            height: 40px;
+            border: none;
+            padding: 0 30px;
+            font-family: $font;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-top: .8em;
+        }
+    }
+
+    #apple{
+        max-width: 13em;
+    }
+
+    #google{
+        max-width: 15em;
+    }
+
+    .footer{
+        background-color: $lgray;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10%;
+        h6{
+            color: $white;
+            font-family: $font;
+            font-weight: 500;
+            font-size: .7em;
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 500px) {
+    .gradient{
+        img{
+            max-width: 25em;
+        }
+    }
+    .chunk{
+        max-width: 45em;
+        margin: auto;
+    }
+
+    .downloads{
+        flex-direction: row;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .gradient{
+        img{
+            width: 25em;
+        }
+    }
+    .chunk{
+        max-width: 80em;
+        .triple{
+            flex-direction: row;
+        }
+        .item{
+            max-width: 33.3%;
+        }
+    }
+    .downloads{
+        padding-bottom: 2em;
+    }
+}

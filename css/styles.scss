@@ -115,12 +115,18 @@ $font: 'Montserrat', sans-serif;
 @media only screen and (min-width: 500px) {
     .gradient{
         img{
-            max-width: 25em;
+            max-width: 18em;
+        }
+        h4{
+            font-size: 1.8em;
         }
     }
     .chunk{
         max-width: 45em;
         margin: auto;
+        h1{
+            font-size: 2.8em;
+        }
     }
 
     .downloads{
@@ -132,7 +138,7 @@ $font: 'Montserrat', sans-serif;
 @media only screen and (min-width: 1200px) {
     .gradient{
         img{
-            width: 25em;
+            width: 18em;
         }
     }
     .chunk{
@@ -142,6 +148,9 @@ $font: 'Montserrat', sans-serif;
         }
         .item{
             max-width: 33.3%;
+        }
+        h1{
+            font-size: 3em;
         }
     }
     .downloads{
